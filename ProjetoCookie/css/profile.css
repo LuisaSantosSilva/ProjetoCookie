@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    background: #ecab0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif; /* Adicionei a definição de fonte */
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif; /* Adicionei a definição de fonte */
+}
+
+.card-login {
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #ecab0f;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.btn-css {
+    width: auto;
+    padding: 12px 20px; /* Ajustei o tamanho do botão */
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ddcae2;
+    background: #c72713;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #ffffff;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-login {
+        width: 90%;
+    }
+}
