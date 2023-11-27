@@ -1,4 +1,5 @@
 <?php
+//Luisa Santos
 // Verifica se o usuário já está logado
 if (isset($_COOKIE['user_id'])) {
     header("Location: profile.php");
@@ -11,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = isset($_POST['username']) ? $_POST['username'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-    // Verifica as credenciais (substitua isso com seu próprio sistema de autenticação)
+    // Verifica as credenciais
     $valid_username = 'user';
     $valid_password = 'password';
 
@@ -26,8 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="pt-BR">
